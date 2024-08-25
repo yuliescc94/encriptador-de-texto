@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Encriptador de texto</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	
+	<header>
+		
+		<img src="./assets/Vector.png" alt="Logo de la pagina" class="logo">
+
+	</header>
+	
+	<main>
+		<div class="contenedor-formulario">
+			
+			<form class="form-flex">
+				
+				<div class	="caja-texto">
+					<textarea placeholder="Ingrese el texto aqui"></textarea>
+					
+					<div class="info-form">
+						<img src="./assets/Group.png" alt="Icono de información">	
+						<span>
+							Solo letras minúsculas y sin acentos
+						</span>
+					</div>
+
+				</div>
+				
+				<div class="botones-contenedor">
+					<button onclick="encrypt()" type="button" class="botones-pagina" id="botonEncriptar">Encriptar</button>
+					<button onclick="desencrypt()" type="button" class="botones-pagina" id="botonDesencritpar">Desencriptar</button>		
+				</div>
+
+			</form>
+
+		</div>
+
+		<div class="contenedor-salida-de-texto">
+			<div id="textoFinal"></div>
+			<div class="mensaje-vacio">
+				<img src="./assets/Muñeco.png" alt="Imagen de muñeco" class="imagen-muñeco">
+
+				<h3 class="titulo-mensaje">
+					Ningún mensaje fue encontrado
+				</h3>
+
+				<p class="descripcion-mensaje">
+					Ingresa el texto que desees encriptar o desencriptar.
+				</p>
+			</div>
+			<button class="botones-pagina boton-copiar" onclick="copiarContenido()">Copiar Texto</button>
+		</div>
+
+	</main>
+	
+	<footer>
+		<p>Desarrollado por - Yuliana Escobar</p>
+		<div class="redes-sociales">
+			<ul>
+				<li>
+					<a class="links-rrss" href="">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+
+				<li>
+					<a class="links-rrss" href="">
+						
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</li>
+
+				<li>
+					<a class="links-rrss" href="">
+					
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</footer>
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+</html>	
